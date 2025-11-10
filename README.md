@@ -25,3 +25,7 @@
 1. Credentials were undefined at first. I solved this by importing and using the **dotenv** package to load environment variables and configuring Playwright to run `global.setup.js` before any test to handle authentication.  
 
 2. Playwright couldn’t click the “Next” button because `aria-disabled` was `true`. I fixed it by forcing the click using `.click({ force: true });`.
+
+Dprecated files:
+- .env
+- .npmrc
